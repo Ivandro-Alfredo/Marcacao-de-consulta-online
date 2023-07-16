@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*para limpar as configuraçõespadrões dos navegador*/
+html,
+body,
+.botão {
+	height: 100%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url('../image/istockphoto-532963888-170667a.jpg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Helvetica, sans-serif, Arial;
+}
+h1 {
+	color: black;
+}
+form div {
+	padding-top: 35px;
+}
+/* Configuração do submenu,
+primeiro entra na class navbar-nav, depois faz um
+hover na li, por ultimo entra na ul cuja a class é dropdown-menu 
+*/
+.navbar-nav li:hover > ul.dropdown-menu {
+	display: block;
+}
+
+.submenu {
+	position: relative;
+}
+
+.submenu > .dropdown-menu {
+	top: 0;
+	margin-top: -10px;
+	left: 100%;
+}

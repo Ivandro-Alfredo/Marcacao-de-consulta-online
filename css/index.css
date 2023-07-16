@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*para limpar as configuraçõespadrões dos navegador*/
+html, body,.botão{
+	height: 100%;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;		
+}
+
+body{
+	background-image: url("../image/istockphoto-532963888-170667a.jpg");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size:cover;
+	background-attachment: fixed;
+	font-family:Helvetica, sans-serif, Arial;
+}
+
+
+#head{
+	padding: 5px 0px;
+	background: rgba(0, 0,0, 0.5);
+	border: none;
+}
+.botão{
+	display: table;
+	width: 100%;
+}
+
+.botão-texto{
+	text-align: center;
+	color:rgb(0, 0, 0,0.9);
+	display: table-cell;
+	vertical-align:middle;
+}
+.btn-costum{
+	border-radius: 500px;
+	border:1px solid black;
+	margin: 18px;
+}
+.btn-vermelho{
+	background-color:red;
+	color: white;
+}
+h1#h1{
+
+	font-size:79px;
+	font-weight: 700;
+	letter-spacing: 0.5;
+	padding-top: 90px;
+	vertical-align:middle;
+}
+/* Configuração do submenu,
+primeiro entra na class navbar-nav, depois faz um
+hover na li, por ultimo entra na ul cuja a class é dropdown-menu 
+*/
+.navbar-nav li:hover>ul.dropdown-menu{
+	display: block;
+}
+
+.submenu{
+	position: relative;
+}
+
+.submenu> .dropdown-menu{
+	top:0;
+    margin-top: -10px;
+    left:100%;
+}
+
+

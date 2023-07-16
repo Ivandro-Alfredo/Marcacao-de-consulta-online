@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* para preencher 100% o espaço tanto do html, e body */
+html,body{
+	height: 100%;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;		
+}
+/* id do body */
+#corpo{
+	background-image: url("../image/istockphoto-532963888-170667a.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position-x: center;
+	background-position-y: center;
+	background-attachment: fixed;
+	font-family:  Helvetica, sans-serif, Arial;
+			
+}
+
+#head1{
+		padding: 5px 0px;
+		background: rgba(0, 0,0, 0.5);
+		border: none;
+}
+form div div{
+	padding-top: 35px;
+}
+/* Configuração do submenu,
+primeiro entra na class navbar-nav, depois faz um
+hover na li, por ultimo entra na ul cuja a class é dropdown-menu 
+*/
+.navbar-nav li:hover>ul.dropdown-menu{
+	display: block;
+}
+
+.submenu{
+	position: relative;
+}
+
+.submenu> .dropdown-menu{
+	top:0;
+    margin-top: -10px;
+    left:100%;
+}
